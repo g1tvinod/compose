@@ -15,4 +15,5 @@ jobs:
     - name: Build the Docker image
       run: |
         docker-compose up -d
+        sleep 10s
         curl -v http://127.0.0.1:8000
